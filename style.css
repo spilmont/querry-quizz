@@ -1,0 +1,42 @@
+
+
+#question{
+    border: solid black;
+    height: 150px;
+    margin-bottom: 2%;
+}
+
+#rep-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+}
+
+#rep1{
+    border: black solid;
+    width: 600px;
+    height: 150px;
+
+}
+#rep2{
+    border: black solid;
+    width: 600px;
+    height: 150px;
+
+
+}
+#rep3{
+    border: black solid;
+    width:600px;
+    height: 150px;
+
+}
+#rep4{
+    border: black solid;
+    width: 600px;
+    height: 150px;
+}
+#score{
+    border: black solid;
+}
