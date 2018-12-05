@@ -6,7 +6,7 @@
 body{
     font-family: triforce;
 }
-h1{
+header{
     text-align: center;
 }
 section{
@@ -53,5 +53,6 @@ section{
     height: 16.20vh;
 }
 #score{
+    display: none;
     border: goldenrod outset 5px;
 }

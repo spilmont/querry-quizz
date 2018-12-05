@@ -53,6 +53,9 @@ console.log("Q[i] : " + Quizz[index].value);
         for(let i=0;i<Quizz.length;i++){
             $("#repB"+i).html("reponse exacte: "+Quizz[i].value);
         }
+        }else{
+            $("#quizz").show();
+            $("#score").hide();
     }
     $('#question').html(Quizz[index].question);
     $('#rep1').html(Quizz[index].r1);
