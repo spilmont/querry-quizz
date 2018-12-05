@@ -2,7 +2,7 @@ var Quizz = [
     {question : "Quelle est le personnage jouable dans les legends of Zelda?",value:"Link",r1:"Zelda",r2:"Link",r3:"Vaati",r4:"Ganondorf"},
     {question : "comment s'apel le royaume des principaux opus?",value:"Hyrule",r1:"Holodrum",r2:"Cocolint",r3:"Termina",r4:"Hyrule"},
     {question : "Comment s'apelle le peuple de la forêt de ocarina of time?",value:"Kokiri",r1:"Kokiri",r2:"Conkirie",r3:"pet de mojo",r4:"Korogus"},
-    {question : "Quel peuple ne fais pas partis des Zelda",value:"Gillets Jaune",r1:" Zoras",r2:"Gorons",r3:"Gillets Jaunes",r4:"Hyliens"},
+    {question : "Quel peuple ne fais pas partis des Zelda",value:"Gillets Jaunes",r1:" Zoras",r2:"Gorons",r3:"Gillets Jaunes",r4:"Hyliens"},
     {question : "Quelle arme exite pas dans Zelda",value:"fleau",r1:"fleau",r2:"Grappin",r3:"Arc",r4:"Marteau"},
     {question : "Quelle est la particularité de Link",value:"il ne s'est pas parler",r1:"il sert a rien",r2:"il est habillé en vert",r3:"il a des oreilles hyliennes",r4:"il ne s'est pas parler"},
     {question : "Comment s'appel le cheval de Link ",value:"Epona",r1:"Epona",r2:"Zelda",r3:"igor",r4:"Ganondorf"},
