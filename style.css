@@ -3,60 +3,78 @@
     src: url(Triforce.ttf);
 }
 
+img{
+    height:15.7vh;
+    width: 26vw;
+}
+
+
 body{
     font-family: triforce;
     background: #00af4a;
+    text-align: center;
+    font-size: 2.5vh;
 }
 header{
     text-align: center;
 }
-section{
-    font-size: 2em;
-}
 
-#question{
-   border: goldenrod outset 5px;
+
+#question {
+    border: goldenrod outset 5px;
     background-size: contain;
     height: 16.20vh;
-    width: 99vw;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2vh;
+    padding-top: 5%;
 }
-
 #rep-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 54vh;
+    height: 50vh;
 }
 
 #rep1{
     border: goldenrod outset 5px;
     width: 35vw;
-    height: 16.20vh;
+    height: 16vh;
+    padding-top: 2%;
 
 }
 #rep2{
     border: goldenrod outset 5px;
     width:  35vw;
-    height: 16.20vh;
+    height: 16vh;
+    padding-top: 2%;
 
 
 }
 #rep3{
     border: goldenrod outset 5px;
     width: 35vw;
-    height: 16.20vh;
+    height: 16vh;
+    padding-top: 2%;
 
 }
 #rep4{
     border: goldenrod outset 5px;
     width:  35vw;
-    height: 16.20vh;
+    height: 16vh;
+    padding-top: 2%;
 }
 #score{
     display: none;
     border: goldenrod outset 5px;
+    padding-top: 2px;
 }
-#rep-box0 {
-    margin: 5px;
+
+t1{
+    color: gold;
+}
+
+t2{
+    color: lawngreen;
 }

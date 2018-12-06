@@ -48,15 +48,18 @@ console.log("Q[i] : " + Quizz[index].value);
         $("#score").show();
         $("#scoreDiv").html("Score: "+score+"/10");
         for(let i=0;i<Quizz.length;i++){
-            $("#repB"+i).html("reponse exacte: "+Quizz[i].value);
-            $("#rep-user"+i).html("vous avez repondu:" +Utilisateur[i]);
+            $("#repB"+i).html("<t2>$</t2> reponse exacte: "+Quizz[i].value+" <t2>$</t2>");
+            $("#rep-user"+i).html("<t1>*</t1> vous avez repondu:" +Utilisateur[i]+" <t1>*</t1>");
             $("#repB"+i).css({marginBottom: 10+"px"})
         }
         }else{
             $("#quizz").show();
             $("#score").hide();
     }
+
     $('#question').html(Quizz[index].question);
+    $('#quizz').hide();
+    $('#quizz').fadeIn(2000);
     $('#rep1').html(Quizz[index].r1);
     $('#rep2').html(Quizz[index].r2);
     $('#rep3').html(Quizz[index].r3);
