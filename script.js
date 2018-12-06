@@ -10,6 +10,7 @@ var Quizz = [
     {question : "Quel personnage n'est pas un énemi de Link ",value:"Impa",r1:"Ganon",r2:"Vaati",r3:"Impa",r4:"ghirahim"},
     {question : "quelle animal vous attaque si vous vous acharné dessus",value:"poule",r1:"cheval",r2:"poule",r3:"chien",r4:"chat"},
 ];
+var Utilisateur=[];
 
 var score=0;
 var index=0;
@@ -21,13 +22,10 @@ $('#rep2').html(Quizz[0].r2);
 $('#rep3').html(Quizz[0].r3);
 $('#rep4').html(Quizz[0].r4);
 
-
 for(let j=1;j<=4;j++){
 $("#rep"+j).click(function () {
 
-
-
-
+Utilisateur.push($("#rep"+j).html());
 
 console.log("Q[i] : " + Quizz[index].value);
     console.log("U[i] : " +$("#rep"+(j)).html());
@@ -36,7 +34,6 @@ console.log("Q[i] : " + Quizz[index].value);
 
         score++;
         console.log(score);
-
 
     }else{
 
@@ -52,6 +49,8 @@ console.log("Q[i] : " + Quizz[index].value);
         $("#scoreDiv").html("Score: "+score+"/10");
         for(let i=0;i<Quizz.length;i++){
             $("#repB"+i).html("reponse exacte: "+Quizz[i].value);
+            $("#rep-user"+i).html("vous avez repondu:" +Utilisateur[i]);
+            $("#repB"+i).css({marginBottom: 10+"px"})
         }
         }else{
             $("#quizz").show();
@@ -62,8 +61,6 @@ console.log("Q[i] : " + Quizz[index].value);
     $('#rep2').html(Quizz[index].r2);
     $('#rep3').html(Quizz[index].r3);
     $('#rep4').html(Quizz[index].r4);
-
-
 });
 }
 

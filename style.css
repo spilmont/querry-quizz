@@ -5,6 +5,7 @@
 
 body{
     font-family: triforce;
+    background: #00af4a;
 }
 header{
     text-align: center;
@@ -55,4 +56,7 @@ section{
 #score{
     display: none;
     border: goldenrod outset 5px;
+}
+#rep-box0 {
+    margin: 5px;
 }
