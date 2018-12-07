@@ -1,3 +1,4 @@
+// object array for quizz
 var Quizz = [
     {question : "Quelle est le personnage jouable dans les legends of Zelda?",value:"Link",r1:"Zelda",r2:"Link",r3:"Vaati",r4:"Ganondorf"},
     {question : "comment s'apel le royaume des principaux opus?",value:"Hyrule",r1:"Holodrum",r2:"Cocolint",r3:"Termina",r4:"Hyrule"},
@@ -10,28 +11,37 @@ var Quizz = [
     {question : "Quel personnage n'est pas un énemi de Link ",value:"Impa",r1:"Ganon",r2:"Vaati",r3:"Impa",r4:"ghirahim"},
     {question : "quelle animal vous attaque si vous vous acharné dessus",value:"poule",r1:"cheval",r2:"poule",r3:"chien",r4:"chat"},
 ];
+
+//variable for  push user answers
 var Utilisateur=[];
 
+// variable for score
 var score=0;
+// variable fo browse the object array
 var index=0;
+// variables for count the number of click
 var click =0;
 
+//display question and choises answers
 $('#question').html(Quizz[0].question);
 $('#rep1').html(Quizz[0].r1);
 $('#rep2').html(Quizz[0].r2);
 $('#rep3').html(Quizz[0].r3);
 $('#rep4').html(Quizz[0].r4);
 
+//loop for browse the click on the answers
 for(let j=1;j<=4;j++){
 $("#rep"+j).click(function () {
 
+    // push the choice user int the array "Utilisteur"
 Utilisateur.push($("#rep"+j).html());
 
 console.log("Q[i] : " + Quizz[index].value);
     console.log("U[i] : " +$("#rep"+(j)).html());
 
+     //compare the value of object array to the user answer
     if( Quizz[index].value === $("#rep"+j).html()){
-
+        //increase the score
         score++;
         console.log(score);
 
@@ -39,11 +49,13 @@ console.log("Q[i] : " + Quizz[index].value);
 
         console.log(score);
     }
-
+    //increase the click
     click++;
     index++;
 
+    //condition for block the click if "click" more the 9
     if(click >9){
+        //show the scoreans hide the game
         $("#quizz").hide();
         $("#score").show();
         $("#scoreDiv").html("Score: "+score+"/10");
@@ -56,10 +68,10 @@ console.log("Q[i] : " + Quizz[index].value);
             $("#quizz").show();
             $("#score").hide();
     }
-
+    // display the different question whith Fade effect
     $('#question').html(Quizz[index].question);
     $('#quizz').hide();
-    $('#quizz').fadeIn(2000);
+    $('#quizz').fadeIn(1000);
     $('#rep1').html(Quizz[index].r1);
     $('#rep2').html(Quizz[index].r2);
     $('#rep3').html(Quizz[index].r3);

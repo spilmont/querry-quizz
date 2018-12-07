@@ -21,9 +21,12 @@ header{
 
 
 #question {
-    border: goldenrod outset 5px;
-    background-size: contain;
-    height: 16.20vh;
+
+    border: 20px solid transparent;
+    border-image: url(border.png)30 round;
+
+    background-size: 100px;
+    height: 14vh;
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
@@ -35,35 +38,44 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     height: 50vh;
+
 }
 
 #rep1{
-    border: goldenrod outset 5px;
+    border:20px solid transparent;
+    border-image: url(border.png)30 round;
     width: 35vw;
-    height: 16vh;
+    height: 14vh;
     padding-top: 2%;
+    cursor: url(epee.png),pointer;
 
 }
 #rep2{
-    border: goldenrod outset 5px;
+    border: 20px solid transparent;
+    border-image: url(border.png)30 round;
     width:  35vw;
-    height: 16vh;
+    height: 14vh;
     padding-top: 2%;
+    cursor:url(Bouclier_Hylien.png), pointer;
 
 
 }
 #rep3{
-    border: goldenrod outset 5px;
+    border: 20px solid transparent;
+    border-image: url(border.png)30 round;
     width: 35vw;
-    height: 16vh;
+    height: 14vh;
     padding-top: 2%;
+    cursor:url(Navi.png), pointer;
 
 }
 #rep4{
-    border: goldenrod outset 5px;
+    border: 20px solid transparent;
+    border-image: url(border.png)30 round;
     width:  35vw;
-    height: 16vh;
+    height: 14vh;
     padding-top: 2%;
+    cursor: url(Ocarina_du_Temps_oot.png), pointer;
 }
 #score{
     display: none;
